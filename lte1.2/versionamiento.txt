@@ -1,0 +1,80 @@
+Validacion
+Ventas => Terminado al 100, not failed
+Tarea => Terminado al 100, not failed
+cliente => Terminado al 100, not failed
+Vehiculo => Terminado al 100, not failed
+Empleados => Terminado al 100, not failed
+Productos => Terminado al 100, not failed
+Servicios => Terminado al 100, not failed
+
+Reportes Excel
+Ventas => Terminado al 100,  not failed
+Tarea => Terminado al 100,  not failed
+cliente => Terminado al 100,  not failed 
+Vehiculo => Terminado al 100,  not failed
+Empleados => Terminado al 100,  not failed
+Productos => Terminado al 100,  not failed
+Servicios => Terminado al 100, not failed
+
+
+Reportes PDF
+Ventas => Terminado al 100,  not failed
+Tarea => Terminado al 100,  not failed
+cliente => Terminado al 100,  not failed
+Vehiculo => Terminado al 100,  not failed
+Empleados => Terminado al 100,  not failed
+Productos => Terminado al 100, not failed
+Servicios => Terminado al 100, not failed
+
+Filtros multicriterio 
+
+Ventas => Terminado al 100, not failed 
+Tarea => Terminado al 100,  not failed
+cliente => Terminado al 100,  not failed
+Vehiculo => Terminado al 100, not failed 
+Empleados => Terminado al 100,  not failed
+Productos => Terminado al 100, not failed
+Servicios => Terminado al 100, not failed
+
+Inhabilitar y desbilitar 
+
+Ventas => Terminado al 100, not failed
+Tarea => Terminado al 100,  not failed
+cliente => Terminado al 100, not failed 
+Vehiculo => Terminado al 100,  not failed
+Empleados => Terminado al 100,  not failed
+Productos => Terminado al 100, not failed
+Servicios => Terminado al 100, not failed
+
+
+Inhabilitar y desbilitar que no se vea la informacion en otros forms
+
+Ventas => Terminado al 100,  not failed
+Tarea => Terminado al 100,  not failed
+cliente => Terminado al 100, not failed 
+Vehiculo => Terminado al 100,  not failed
+Empleados => Terminado al 100,  not failed
+Productos => Terminado al 100, not failed
+Servicios => Terminado al 100, not failed
+
+Inhabilitar y desbilitar que no se vea la informacion en los reportes EXCEL Y PDF
+
+Ventas => Terminado al 100,  not failed
+Tarea => Terminado al 100,  not failed
+cliente =>  Terminado al 100,  not failed
+Vehiculo => Terminado al 100,  not failed
+Empleados => Terminado al 100,  not failed
+Productos => Terminado al 100,  not failed
+Servicios => Terminado al 100,  not failed
+
+
+cliente => Sirve todo yia
+Vehiculo => Sirve todo yia
+Empleados => Sirve todo yia 
+Tarea => Sirve todo yia 
+Productos => Todo sirve yia
+Servicios => Todo sirve yia 
+Ventas => Todo sirve yia 
+
+
+

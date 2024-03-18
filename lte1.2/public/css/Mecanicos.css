@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,700&display=swap');
+
+
+/*============ Los colores ============*/
+:root{
+    --color-primary: #E6B11E;
+    --color-piston: #E6B11E;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #20cfcf;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-btn:#E6B11E;
+    --color-mecanicos:#181a1e;
+    --color-subtitulo-mecanicos:#E6B11E;
+    --color-agregar-mecanicos:#dedcdc55;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-info-light);
+
+
+}
+
+/*============  Colores para el fondo oscuro jaja ============*/
+
+.dark-theme-variables{
+    --color-background:#181a1e;
+    --color-white:#202528;
+    --color-dark:#edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-mecanicos:#ffffff;
+    --color-subtitulo-mecanicos:#E6B11E;
+    --color-agregar-mecanicos:rgba(0,0,0,0.4);
+    --color-light:rgba(0,0,0,0.4);
+    --box-shadow:0 2rem 3rem var(--color-light);
+}
+
+/*============ Fin colores ============*/
+
+/*============ el espaciado y la fuente del texto en general y la interfaz ================*/
+*{
+    margin: 0;
+    padding: 0%;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*============ Fin  el espaciado y la fuente del texto en general y la interfaz ================*/
+
+
+/*============ Tamaño de la letra ============*/
+html{
+    font-size: 14px;
+}
+/*============ el espaciado y la fuente del texto en general y la interfaz ================*/
+
+body{
+    width: 100vh;
+    height: 100vh;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+/*============ El contenedor para TODA la interfaz, osease este es el que encierra los iconos y e letreo de la interfaz ================*/
+.container{
+    
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+
+}
+
+a{
+    color: var(--color-dark);
+}
+/*============ Tamaños de todas fuentes para el proyecto ================*/
+
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.0rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+/*============ Medidas para la resolucion de la fotografia del Administrador ================*/
+.profile-photo img{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/*============ Colores elegidos de los iconos de la interfaz ================*/
+.text-muted{
+    color: var(--color-info-dark);
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+b{
+    color: var(--color-dark);
+}
+/*============ Colores elegidos del las fuentes y del nombre del logo de la empresa Pis (Amarillo ) Ton en oscuro ================*/
+.primary{
+    color: var(--color-primary-variant);
+    text-align: center;
+}
+
+.danger{
+    color: var(--color-piston);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+/*============ Esta es para cambiar la ubicacion del container del logo y de el nombre la empresa ================*/
+aside{
+    height: 100vh;
+}
+/*============ Creacion del container para el logo y el nombre de la empresa ================*/
+aside .top{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    
+
+}
+/*============ Resolucion del logo junto con el nombre del proyecto ================*/
+
+aside .logo{
+  display: flex;
+  top: 15px;
+  gap: 0.8rem;
+}
+
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+/*============ Fin  Resolucion del logo junto con el nombre del proyecto ================*/
+
+
+/*============ Cerrar la intefaz el logo ================*/
+
+aside .close{
+    display: none;
+}
+
+/*============ Fin  Cerrar la intefaz el logo ================*/
+
+/*============ Mover el container de la interfaz  ================*/
+aside .sidebar{
+    
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+/*============ Fin de el Mover el container de la interfaz  ================*/
+aside h3{
+    font-weight: 500;
+
+}
+
+/*============ Esto es el color de los modulos, el espaciado de cada uno de ellos ================*/
+aside .sidebar a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+
+}
+/*============ Duracion de la Animacion de la tansicion de color de gris a amarillo en la interfaz ================*/
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 300ms;
+}
+/*============ Esto es para llevar la posicion de la variable "Salir" hasta el final de la interfaz ================*/
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+/*============ Este es el relleno de la seleccion de cada uno de los modulos ================*/
+aside .sidebar a.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+/*============ Este es la seccion de color de amarillo cuando un modulo ya esta elegido================*/
+aside .sidebar a.active::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+/*============ Este es el final cuando se termina la transcision de la interfaz ================*/
+aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+
+aside .sidebar a:hover span{
+    margin-left: 1rem;
+}
+/*============ Este es el contador de cuantos productos hay en el modulo de productos ================*/
+aside .sidebar .message-count{
+    background: var(--color-piston);
+    color: var(--color-white);
+    padding: 2px 10px;
+    font-size: 11px;
+    border-radius: var(--border-radius-1);
+}
+
+/*============ Seccion Principal ========== */
+main{
+  margin-top:1.4rem ;
+}
+/*============ Ubicacion y contorno del horario ========== */
+main .date{
+    display: inline-block;
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+/*============  contorno y relleno horario ========== */
+main .date input[type="date"]{
+    background: transparent;
+     color: var(--color-dark);
+}
+/*============  Creacion de los tres cuadros jaja ========== */
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+/*============  Bordeado de los tres cuadros jaja ========== */
+main .insights > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .insights > div:hover{
+    box-shadow: none;
+}
+/*============  Contorno y Bordeado de los tres iconos jaja ========== */
+/*============  Bordeado de los tres cuadros jaja ========== */
+main .insights > div span{
+   background: var(--color-piston);
+   padding: 0.5rem; 
+   border-radius: 50%;
+   color: var(--color-white);
+   font-size: 2rem ;
+
+}
+main .insights > div.expenses span{
+    background: coral;
+
+}
+
+main .insights > div.saves span{
+    background: var(--color-success);
+
+}
+/*============  Fin  Colores de los iconos de los tres iconos jaja ========== */
+
+/*============  Espaciado entre la barra de progreso y el total de cada cuadro ========== */
+main .insights > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+main .insights h3{
+    margin: 3rem 0 0.1rem;
+    font-size: 1rem;
+}
+
+main .insights .progress{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+
+}
+
+main .insights svg{
+   
+    width: 7rem;
+    height: 7rem;
+}
+/*============  Color de la grafica ========== */
+main .insights svg circle{
+    
+    fill: none;
+    stroke: var(--color-primary) ;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    
+}
+/*============  Porcentajes asignados de la grafica ========== */
+main .insights .sales svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+main .insights .expenses svg circle{
+    stroke-dashoffset: -60;
+    stroke-dasharray: 100;
+}
+
+main .insights .saves svg circle{
+    stroke-dashoffset: -40;
+    stroke-dasharray: 195;
+}
+/*============  Fin Porcentajes asignados de la grafica ========== */
+
+/*============  Ubicacion y ajustar el numero de Porcentajes centrados de en la grafica ========== */
+main .insights .progress .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===============Informacion Cliente vehiculo la tabla :D =============*/
+
+/* =============== Separacion de los datos de la tabla jaja =============*/
+
+
+main .recent-order{
+    margin-top: 2rem;
+}
+
+main .recent-order h2{
+    margin-bottom: 0.8rem;
+
+}
+
+
+.btn-editar{
+    font-size: 13px;
+    background-color: var(--color-btn);
+    color: white;
+    border: none;
+    padding: 4px 7px;
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+    display: inline-block;
+      letter-spacing: 1px;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: var(--color-btn);
+      box-shadow: 0 8px 24px 0 rgba(209, 147, 12, 0.529);
+      transition: all 200ms linear; margin-right: 8px; /* Espacio a la derecha del botón */
+    
+}
+
+.btn-editar:hover{
+    background: var(--color-success);
+}
+
+
+.btn-eliminar{
+
+    background-color: var(--color-btn);
+    color: var(--color--white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+    display: inline-block;
+      letter-spacing: 1px;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: var(--color-btn);
+      box-shadow: 0 8px 24px 0 rgba(209, 147, 12, 0.529);
+      transition: all 200ms linear; margin-right: 8px; /* Espacio a la derecha del botón */
+    font-family: 'Roboto Flex', sans-serif;
+}
+/* =============== Creacion de la tabla jaja =============*/
+
+main .recent-order table{
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+
+}
+/* =============== Animacion de la sombra de la tabla al igual con los tres cuadros =============*/
+
+main .recent-order table:hover{
+    box-shadow: none;
+}
+/* =============== Bordeado de la tabla de los datos =============*/
+main table tbody td{
+    height:2.8rem ;
+    border-bottom: 1px solid var(--color-info-light);
+    color: var(--color-dark-variant);
+
+}
+
+main table tbody tr:last-child td{
+    border: none;
+}
+/* =============== Alineacion del texto y color "Muestrame mas" =============*/
+main .recent-order a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color:  var(--color-primary-variant);
+}
+
+/* =============== Fin Informacion Cliente vehiculo la tabla :D =============*/
+
+/* =============== Fin De la seccion principal =============*/
+
+/* =============== Interfaz del Administrador :D =============*/
+.right{
+    margin-top: 1.4rem;
+}
+
+.right .top{
+    display: flex;
+    justify-content: end;
+    gap:2rem;
+    
+}
+/* =============== Icono del menu para moviles =============*/
+.right .top button{
+    display: none;
+
+    /* =============== Alineacion en los iconos  =============*/
+}
+.right .theme-toggler{
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right .theme-toggler span{
+font-size: 1.2rem;
+width: 50%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+ /* =============== Contorno del boton de modo iluminacion o Light mode  =============*/
+.right .theme-toggler span.active{
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+ /* =============== Ubicacion de Admin   =============*/
+
+.right .top .profile{
+    display: flex;
+    gap:  2rem;
+    text-align: right;
+}
+/* =============== Fin de la Interfaz del Administrador :D =============*/
+
+
+ /* =============== Cuadro de la derecha abajo del admin   =============*/
+ /* =============== Ubicacion del titulo "Detalles del Servicio"   =============*/
+
+ .right .recent-updates{
+    margin-top: 0rem;
+
+ }
+
+ .right .recent-updates h2{
+    margin-bottom: 1.5rem;
+
+ }
+ /* =============== Cuadro "Detalles del Mecanico"   =============*/
+
+ .right .recent-updates .updates{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .right table tbody  td{
+    height:2.8rem ;
+    border-bottom: 1px solid var(--color-info-light);
+    color: var(--color-dark-variant);
+    box-sizing: content-box;
+
+}
+
+ .right .recent-updates .updates:hover{
+    box-shadow: none;
+
+ }
+
+  /* =============== Fin de Cuadro de la derecha abajo del admin   =============*/
+
+  /* ===============  Cuadro de Agregar Mecanico   =============*/
+
+  .right .receipt{
+    margin-top: 2rem;
+
+  }
+
+  .right .receipt h2{
+    margin-bottom: 0.8rem;
+
+  }
+
+  .right .receipt .item{
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+
+  } 
+
+  .right .receipt .item:hover{
+    box-shadow: none;
+  }
+
+  /* Formulario de Mecanicos :D*/
+
+  section:last-of-type {
+    margin: 20px;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+    color: var(--color-subtitulo-mecanicos);
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+    color: var(--color-mecanicos);
+    background: var(--color-agregar-mecanicos);
+    border-radius: var(--border-radius-3);
+    
+  }
+
+  #disponibilidad{
+    border-radius: var(--border-radius-1);
+    padding: 5px 8px;
+    background: var(--color-btn);
+      box-shadow: 0 8px 24px 0 rgba(209, 147, 12, 0.529);
+      transition: all 200ms linear;
+  }
+
+  #disponibilidad:hover{
+    background: var(--color-success)
+  }
+
+  option{
+    
+    text-align: center;
+  }
+  
+  select {
+    width: auto;
+  }
+  
+  button[type="submit"] {
+    background-color: var(--color-btn);
+    color: var(--color--white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+    display: inline-block;
+    color: var(--color--white);
+      letter-spacing: 1px;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: var(--color-btn);
+      box-shadow: 0 8px 24px 0 rgba(209, 147, 12, 0.529);
+      transition: all 200ms linear;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: var(--color-success);
+  }
+
+    /* ===============  Fin Cuadro de Factura   =============*/
+
+    /* =============== @Media para dispositivos   =============*/
+     /* =============== @Media para Tablets   =============*/
+
+ @media screen  and (max-width:1400px) {
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2{
+        display: none;
+
+    }
+
+    aside .sidebar h3{
+        display: none;
+
+    }
+
+    aside .sidebar a{
+        width: 5.6rem;
+
+    }
+
+    aside .sidebar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+
+    }
+
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .recent-order{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+
+    main .recent-order table{
+        width: 50vw;
+
+    }
+
+    main table thead tr th:last-child, 
+    main table thead tr th:first-child{
+        display: none;
+    }
+
+    main table tbody tr td:last-child, 
+    main table tbody td th:first-child{
+        display: none;
+    }
+
+    .primary{
+        text-align: center;
+    }
+ }
+
+  /* =============== Fin @Media para Tablets   =============*/
+
+   /* ===============  @Media para Moviles   =============*/
+
+   @media screen  and (max-width:991px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 0.1fr;
+
+    }
+
+    aside{
+        position: fixed;
+        left: -100%;
+        background: var(--color-background);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color--white);
+        height: 100vh;
+        padding-right: var(--card-padding);
+           /* ===============  Animacion para la el dezplazamiento de la interfaz :D   =============*/
+
+        display: none;
+        animation: showMenu 400ms ease forwards;
+
+    }
+
+    @keyframes showMenu{
+        to{
+            left: 0;
+        }
+    }
+           /* ===============  Fin Animacion para la el dezplazamiento de la interfaz :D   =============*/
+
+
+    aside .logo{
+      margin-left: 1rem;
+    }
+
+    aside .logo h2{
+        display: inline;
+    }
+
+    aside .sidebar h3{
+        display: inline;
+    }
+
+    aside .sidebar a{
+        width: 100%;
+        height: 3.4rem;
+
+    }
+
+    aside .sidebar a:last-child{
+        position:absolute;
+        bottom: 5rem;
+
+    }
+
+    aside .close{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    main {
+        margin-top: 8rem;
+        padding: 0 1rem;
+
+    }
+
+    main .recent-order{
+        position: relative;
+        margin:  3rem 0 0 0;
+        width: 100%;
+
+    }
+
+    main .recent-order table{
+        width: 100%;
+        margin: 0;
+
+
+    }
+
+    .right{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .right .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow:0 1rem 1rem var(--color--white) ;
+
+    }
+
+    .right .top.theme-toggler{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+
+    }
+
+    .right .profile .info{
+        display: none;
+
+    }
+
+    .right .top button{
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+
+    }
+
+    .right .top button span{
+        font-size: 2rem;
+
+    }
+    
+    
+
+
+   }
